@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Formulário membros</title>
+</head>
+
+<body>
+<script src="script.js"></script>
+    <div>
+
+        <h1 id="titulo"><strong>Cadastro de membros</strong></h1>
+        <p id="subtitulo"><strong>Complete suas informações</strong></p>
+        <br>
+
+
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome" autofocus><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div>
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label for=""><strong>Se estiver escalado para alguma esquipe de trabalho, sinalize abaixo:</strong></label>
+            <label for="">
+                <input type="radio" name="cargo" value="membro" checked>Carros
+            </label>
+            <label for="">
+                <input type="radio" name="cargo" value="diacono">Diácono
+            </label>
+            <input type="radio" name="cargo" value="musico">Louvor
+        </div>
+        <div id="check">
+            <fieldset class="grupo" required>
+                <label for=""><strong>Qual horário do culto você irá?</strong></label>
+                <br>
+                <input type="checkbox" name="manha" id="manha" value=Manhã>
+                <label for="manha">Manhã (8:00)</label>
+                <input type="checkbox" name="noite" id="noite" value="Manhã">
+                <label for="noite">Noite (18:00)</label>
+            </fieldset>
+        </div>
+
+        <button class="botao" type="submit" onclick="submit()">Concluir</button>
+
+    </form>
+
+
+
+</body>
+
+</html>
